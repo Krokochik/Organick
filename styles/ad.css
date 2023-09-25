@@ -1,0 +1,91 @@
+.ad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(675px, 1fr));
+    justify-items: center;
+    grid-row-gap: 20px;
+    max-width: 1440px;
+    padding: 150px 0;
+    margin: auto;
+}
+
+/* height = width / k where k = 1,759 */
+.offer {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: 665px;
+    height: 378px;
+    padding: 0 55px;
+}
+
+.offer__title {
+    font-weight: 400;
+    max-width: 265px;
+}
+
+.offer_fruits {
+    background: url("../images/ad-fruits.png") no-repeat;
+    background-size: cover;
+    .offer__cut, .offer__title {
+        color: white;
+    }
+}
+
+.offer_vegs {
+    background: url("../images/ad-vegetables.png") no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1349px) {
+    .ad {
+        padding: 100px 0;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .offer__title {
+        font-size: 30px;
+        max-width: 195px;
+    }
+
+    .offer {
+        width: 500px;
+        height: 284px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ad {
+        padding: 50px 0;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+
+    .offer {
+        width: 420px;
+        height: 239px;
+    }
+
+    .offer__title {
+        font-size: 20px;
+        max-width: 135px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .ad {
+        padding: 25px 0;
+        grid-template-columns: repeat(auto-fit, minmax(318px, 1fr));
+    }
+
+    .offer {
+        width: 318px;
+        height: 181px;
+    }
+
+    .offer__title {
+        font-size: 16px;
+        max-width: 115px;
+    }
+}

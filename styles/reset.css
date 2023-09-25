@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, a, span, button  {
+    color: var(--main);
+    letter-spacing: 0.023rem; /* 0.36px */
+}
+
+h1, h2, h3, h4, h5, h6, span, a {
+    font-family: Roboto;
+}
+
+p {
+    font-family: "Open Sans";
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 45px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,37 @@
+.mini-shop {
+    background-color: var(--main);
+}
+
+.mini-shop__container {
+    padding: 140px 0;
+}
+
+.mini-shop__headline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 30px 30px 30px;
+}
+
+.mini-shop__title {
+    color: white;
+    text-transform: capitalize;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.mini-shop__button {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .mini-shop__container {
+        padding: 30px 0;
+    }
+
+    .mini-shop__title {
+        font-size: 28px;
+        max-width: 180px;
+    }
+}
