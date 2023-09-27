@@ -7,32 +7,568 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Organick</title>
-    <link rel="icon" href="images/favicon.svg">
+    <link rel="icon" href="/exam/images/favicon.svg">
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Roboto|Yellowtail|Open+Sans">
 
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/exam/css/variables.css">
+    <link rel="stylesheet" href="/exam/css/reset.css">
+    <link rel="stylesheet" href="/exam/css/main.css">
+    <base href="/exam/">
 </head>
 <body>
-<div class="app">
-    <!-- Using custom <fragment> instead of <iframe> to apply all styles to embed -->
-    <fragment src="templates/header.html"></fragment>
+<input type="checkbox" class="navFlag" id="navFlag"/>
+<div id="app" class="app">
+    <label class="hamburger-bg" for="navFlag"></label>
+
+    <div id="hamburger-menu" class="hamburger-menu">
+        <label class="cross hamburger-menu__cross" for="navFlag"></label>
+        <ul class="hamburger-links">
+            <li class="links__link hamburger-links__link links__link_active">
+                <a href="#">Home</a>
+            </li>
+            <li class="links__link hamburger-links__link">
+                <a href="#">About Us</a>
+            </li>
+            <li class="links__link hamburger-links__link">
+                <a href="#">Shop</a>
+            </li>
+            <li class="links__link hamburger-links__link">
+                <a href="#">Pages</a>
+            </li>
+            <li class="links__link links__link_farther hamburger-links__link">
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <header class="header">
+        <div class="header__container container">
+            <nav class="nav">
+                <div class="nav__logo logo">
+                    <a href="#"><img src="/images/logo.svg" alt="logo"></a>
+                </div>
+                <ul class="links">
+                    <li class="links__link links__link_active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="links__link">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="links__link">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="links__link">
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="links__link links__link_farther">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__mobile-menu">
+                <label class="hamburger" for="navFlag">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </label>
+                <div class="cart-container">
+                    <div class="cart">
+                        <a class="cart__link" href="#">
+                            <img class="cart__image" src="/images/cart.svg" alt="cart">
+                        </a>
+                        <span class="cart__text">Cart</span>
+                        <span class="cart__count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <main class="content">
-        <fragment src="templates/intro.html"></fragment>
-        <fragment src="templates/ad.html"></fragment>
-        <fragment src="templates/about.html"></fragment>
-        <fragment src="templates/shop.html"></fragment>
-        <fragment src="templates/feedback.html"></fragment>
-        <fragment src="templates/mini-shop.html"></fragment>
-        <fragment src="templates/advantages.html"></fragment>
-        <fragment src="templates/derivative.html"></fragment>
+
+        <section class="intro">
+            <img class="bg intro__bg" src="/images/introduction.png" alt="breakfast">
+            <div class="container intro__container">
+                <span class="cut intro__cut">Made with nature</span>
+                <h1 class="intro__title">Welcome to the world of nature and organic.</h1>
+                <button class="button button_accent intro__button">Explore Now</button>
+            </div>
+        </section>
+
+        <section class="ad">
+            <div class="offer offer_fruits">
+                <a class="offer__link" href="#"></a>
+                <span class="offer__cut cut">Natural!!</span>
+                <h4 class="offer__title">Get Garden Fresh Fruits</h4>
+            </div>
+            <div class="offer offer_vegs">
+                <a class="offer__link" href="#"></a>
+                <span class="offer__cut cut">Offer!!</span>
+                <h4 class="offer__title">Get 10% off on Vegetables</h4>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container about__container">
+                <div class="bg about__bg"></div>
+                <div class="about__content">
+                    <span class="cut about__cut">About us</span>
+                    <h3 class="about__title">We believe in organic foods for strong health</h3>
+                    <p class="about__text">
+                        Welcome to the world of natural and organic. Here you can discover the bounty of nature.
+                        We have grown on the principles of health, and care. We aim to give our customers a healthy
+                        chemical-free meal for perfect nutrition.
+                    </p>
+                    <div class="list">
+                        <div class="list__item">
+                            <div class="list__visualise">
+                                <img src="/images/organic.svg" alt="organic">
+                            </div>
+                            <div class="list__article">
+                                <span class="list__title">Organic Food Only</span>
+                                <p class="list__description">
+                                    The Product that you ordered will be verified that we have or not
+                                    if have we will start to move on with the next step.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list__item">
+                            <div class="list__visualise">
+                                <img src="/images/quality.svg" alt="quality">
+                            </div>
+                            <div class="list__article">
+                                <span class="list__title">Organic Food Only</span>
+                                <p class="list__description">
+                                    The Product that you ordered will be verified that we have or not
+                                    if have we will start to move on with the next step.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button about__button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container shop">
+            <div class="headline shop__headline">
+                <span class="cut shop__cut">Organic</span>
+                <h3 class="shop__title">Our products</h3>
+            </div>
+            <div class="assortment">
+                <div class="card">
+                    <div class="card__mark">
+                        Vegetable
+                    </div>
+                    <img class="card__image"
+                         src="/images/broccoli.png" alt="broccoli">
+                    <div class="card__content">
+                        <span class="card__name">Calabrese broccoli</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 25.00 USD</span>
+                                <span class="card__new-price">$ 21.00 USD</span>
+                            </div>
+                            <div class="rating rating_five card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__mark">
+                        Vegetable
+                    </div>
+                    <img class="card__image"
+                         src="/images/corn.png" alt="corn">
+                    <div class="card__content">
+                        <span class="card__name">Fresh corn</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 21.23 USD</span>
+                                <span class="card__new-price">$ 18.00 USD</span>
+                            </div>
+                            <div class="rating rating_four card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__mark">
+                        Mill
+                    </div>
+                    <img class="card__image"
+                         src="/images/pistachio.png" alt="pistachio">
+                    <div class="card__content">
+                        <span class="card__name">Dried pistachio</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 61.00 USD</span>
+                                <span class="card__new-price">$ 48.00 USD</span>
+                            </div>
+                            <div class="rating rating_three card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__mark">
+                        Vegetable
+                    </div>
+                    <img class="card__image"
+                         src="/images/tomato.png" alt="tomato">
+                    <div class="card__content">
+                        <span class="card__name">Vegan red tomato</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 14.00 USD</span>
+                                <span class="card__new-price">$ 9.37 USD</span>
+                            </div>
+                            <div class="rating rating_two card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__mark">
+                        Fruits
+                    </div>
+                    <img class="card__image"
+                         src="/images/almonds.png" alt="almonds">
+                    <div class="card__content">
+                        <span class="card__name">Organic almonds</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 21.00 USD</span>
+                                <span class="card__new-price">$ 18.00 USD</span>
+                            </div>
+                            <div class="rating rating_one card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__mark">
+                        Millets
+                    </div>
+                    <img class="card__image"
+                         src="/images/hazelnut.png" alt="hazelnut">
+                    <div class="card__content">
+                        <span class="card__name">Brown hazelnut</span>
+                        <div class="divider card__divider"></div>
+                        <div class="card__info">
+                            <div class="card__pricing">
+                                <span class="card__old-price">$ 43.00 USD</span>
+                                <span class="card__new-price">$ 34.00 USD</span>
+                            </div>
+                            <div class="rating card__rating">
+                                <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                                <div class="rating__de-facto">
+                                    <img src="/images/rating.png" alt="not so great...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- absolute truth -->
+        <section class="feedback">
+            <div class="bg feedback__bg feedback__bg_left"></div>
+            <div class="bg feedback__bg feedback__bg_right"></div>
+            <div class="container feedback__container">
+                <div class="headline feedback__headline">
+                    <span class="cut feedback__cut">Testimonial</span>
+                    <h3 class="feedback__title">What our customers saying?</h3>
+                </div>
+                <div class="feedback__content">
+                    <img class="feedback__photo"
+                         src="/images/photo.png" alt="photo">
+                    <div class="rating rating_five feedback__rating">
+                        <img class="rating__placeholder" src="/images/rating.png" alt="unbelievable fabulous!">
+                        <div class="rating__de-facto">
+                            <img src="/images/rating.png" alt="not so great...">
+                        </div>
+                    </div>
+                    <p class="feedback__text">
+                        The quality of organic produce is extremely high, the service
+                        is second to none and the taste of the food takes me back to my
+                        childhood when we were growing our own.
+                    </p>
+                    <div class="feedback__credentials feedback-credentials">
+                        <span class="feedback-credentials__author">sara taylor</span>
+                        <span class="feedback-credentials__role">consumer</span>
+                    </div>
+                </div>
+                <div class="divider feedback__divider"></div>
+                <div class="summary">
+                    <div class="summary__item">
+                        <div class="bg summary__bg"></div>
+                        <span class="summary__count">100%</span>
+                        <span class="summary__name">Organic</span>
+                    </div>
+                    <div class="summary__item">
+                        <div class="bg summary__bg"></div>
+                        <span class="summary__count">285</span>
+                        <span class="summary__name">Active Product</span>
+                    </div>
+                    <div class="summary__item">
+                        <div class="bg summary__bg"></div>
+                        <span class="summary__count">385+</span>
+                        <span class="summary__name">Organic Orchards</span>
+                    </div>
+                    <div class="summary__item">
+                        <div class="bg summary__bg"></div>
+                        <span class="summary__count">25+</span>
+                        <span class="summary__name">Years of Framing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mini-shop">
+            <div class="container mini-shop__container">
+                <div class="mini-shop__headline">
+                    <div>
+                        <span class="cut mini-shop__cut">Offer products</span>
+                        <h3 class="mini-shop__title">We offer organic for u</h3>
+                    </div>
+                    <button class="button button_accent mini-shop__button">View all products</button>
+                </div>
+                <div class="assortment">
+                    <div class="card">
+                        <div class="card__mark">
+                            Vegetable
+                        </div>
+                        <img class="card__image"
+                             src="/images/tomato.png" alt="tomato">
+                        <div class="card__content">
+                            <span class="card__name">Vegan red tomato</span>
+                            <div class="divider card__divider"></div>
+                            <div class="card__info">
+                                <div class="card__pricing">
+                                    <span class="card__old-price">$ 14.00 USD</span>
+                                    <span class="card__new-price">$ 9.37 USD</span>
+                                </div>
+                                <div class="rating rating_five">
+                                    <img class="rating__placeholder" src="/images/rating.png"
+                                         alt="unbelievable fabulous!">
+                                    <div class="rating__de-facto">
+                                        <img src="/images/rating.png" alt="not so great...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__mark">
+                            Fruits
+                        </div>
+                        <img class="card__image"
+                             src="/images/almonds.png" alt="almonds">
+                        <div class="card__content">
+                            <span class="card__name">Organic almonds</span>
+                            <div class="divider card__divider"></div>
+                            <div class="card__info">
+                                <div class="card__pricing">
+                                    <span class="card__old-price">$ 21.00 USD</span>
+                                    <span class="card__new-price">$ 18.00 USD</span>
+                                </div>
+                                <div class="rating rating_five">
+                                    <img class="rating__placeholder" src="/images/rating.png"
+                                         alt="unbelievable fabulous!">
+                                    <div class="rating__de-facto">
+                                        <img src="/images/rating.png" alt="not so great...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__mark">
+                            Vegetable
+                        </div>
+                        <img class="card__image"
+                             src="/images/corn.png" alt="corn">
+                        <div class="card__content">
+                            <span class="card__name">Fresh corn</span>
+                            <div class="divider card__divider"></div>
+                            <div class="card__info">
+                                <div class="card__pricing">
+                                    <span class="card__old-price">$ 21.23 USD</span>
+                                    <span class="card__new-price">$ 18.00 USD</span>
+                                </div>
+                                <div class="rating rating_five">
+                                    <img class="rating__placeholder" src="/images/rating.png"
+                                         alt="unbelievable fabulous!">
+                                    <div class="rating__de-facto">
+                                        <img src="/images/rating.png" alt="not so great...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="bg advantages__bg"></div>
+            <div class="container advantages__container">
+                <div class="advantages__frame">
+                    <div class="advantages__content">
+                        <span class="cut advantages__cut">Eco friendly</span>
+                        <h3 class="advantages__title">From our farm to your home.</h3>
+                        <div class="advantages__point">
+                            <span class="advantages__subtitle">Choose your products</span>
+                            <p class="advantages__article">
+                                In our listing, we have several collections of organic products.
+                                This is the place where you need to choose the product you want.
+                            </p>
+                        </div>
+                        <div class="advantages__point">
+                            <span class="advantages__subtitle">Farmers will produce it</span>
+                            <p class="advantages__article">
+                                The Product that you ordered will be verified that we have or not
+                                if have we will start to move on with the next step.
+                            </p>
+                        </div>
+                        <div class="advantages__point">
+                            <span class="advantages__subtitle">We can deliver too</span>
+                            <p class="advantages__article">
+                                If you are not comfortable going to the nearby marketplace we also
+                                will deliver your product to your doorstep.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="derivative">
+            <div class="container derivative__container">
+                <div class="derivative__item derivative__item_juice">
+                    <div class="derivative__name">
+                        Fruit juice
+                    </div>
+                </div>
+                <div class="derivative__item derivative__item_organic">
+                    <div class="derivative__name">
+                        Organic food
+                    </div>
+                </div>
+                <div class="derivative__item derivative__item_cookies">
+                    <div class="derivative__name">
+                        Nuts cookies
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <fragment src="templates/footer.html"></fragment>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.360582209608!2d-74.03372192343618!3d40.621929271407275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f8a621ff737%3A0x63b87b08f5ac9099!2zODh0aCBTdCwgQnJvb2tseW4sIE5ZLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1695631919508!5m2!1sru!2sby" width="100%" height="662" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+        <div class="container">
+            <form class="form">
+                <h2 class="form__title">Subscribe our newsletter</h2>
+                <div class="form__container">
+                    <input class="form__input" type="email" placeholder="Enter your email">
+                    <button class="button form__button">Subscribe</button>
+                </div>
+            </form>
+        </div>
+        <div class="container footer__container">
+            <div class="footer__contacts">
+                <h5 class="footer__title">Contact&nbsp;us</h5>
+                <div class="footer__item">
+                    <span class="footer__subtitle">Email</span>
+                    <span class="footer__text footer__text_single-word">needhelp@<br>organick.com</span>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__subtitle">Phone</span>
+                    <span class="footer__text">123 (1254) 1452</span>
+                </div>
+                <div class="footer__item">
+                    <span class="footer__subtitle">Address</span>
+                    <span class="footer__text">88 Road, Brooklyn Street, USA</span>
+                </div>
+            </div>
+            <div class="footer__media">
+                <div class="footer__logo logo">
+                    <a href="#"><img src="/images/logo.svg" alt="logo"></a>
+                </div>
+                <p class="footer__about">
+                    We are a popular and farming company aspiring to be a
+                    leader in the Organic food industry.
+                </p>
+                <div class="footer__socials">
+                    <div class="footer__pair">
+                        <div class="footer__social">
+                            <img src="/images/facebook.svg" alt="facebook">
+                        </div>
+                        <div class="footer__social">
+                            <img src="/images/twitter.svg" alt="twitter">
+                        </div>
+                    </div>
+                    <div class="footer__pair">
+                        <div class="footer__social">
+                            <img src="/images/instagram.svg" alt="instagram"><!---->
+                        </div>
+                        <div class="footer__social">
+                            <img src="/images/pinterest.svg" alt="pinterest">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__pages">
+                <h5 class="footer__title">Utility&nbsp;pages</h5>
+                <div class="footer__item">Style guide</div>
+                <div class="footer__item">Page not found</div>
+                <div class="footer__item">Changelog</div>
+                <div class="footer__item">Licenses</div>
+            </div>
+        </div>
+    </footer>
+    <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.360582209608!2d-74.03372192343618!3d40.621929271407275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24f8a621ff737%3A0x63b87b08f5ac9099!2zODh0aCBTdCwgQnJvb2tseW4sIE5ZLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1695631919508!5m2!1sru!2sby"
+            width="100%" height="662" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        let menuOpened = false;
+        document.querySelector("#navFlag").onchange = e => {
+            menuOpened = !menuOpened;
+            const body = document.querySelector("body");
+            if (menuOpened) {
+                body.style.overflow = "hidden";
+            } else {
+                body.style.overflow = "";
+            }
+        }
+    </script>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script defer src="scripts/index.js"></script>
 </body>
 </html>

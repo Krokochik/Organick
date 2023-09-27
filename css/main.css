@@ -1,0 +1,501 @@
+@import "header.css";
+@import "intro.css";
+@import "ad.css";
+@import "about.css";
+@import "shop.css";
+@import "feedback.css";
+@import "mini-shop.css";
+@import "advantages.css";
+@import "derivatives.css";
+@import "footer.css";
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+.bg {
+    position: absolute;
+}
+
+.cut {
+    color: var(--accent);
+    font-family: Yellowtail;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.05rem; /* 64.8px */
+    letter-spacing: .023rem; /* .36px */
+    text-transform: capitalize;
+}
+
+.button {
+    cursor: pointer;
+    width: max-content;
+    height: 82px;
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: end;
+    text-transform: capitalize;
+    line-height: 38px;
+    border-radius: 15px;
+    padding-left: 33px;
+    background: var(--main);
+    color: white;
+}
+
+.button_accent {
+    background: var(--accent-bright);
+    color: var(--main);
+}
+
+.button:after {
+        content: url("/images/arrow.svg");
+    display: inline-block;
+    margin-left: 27px;
+    margin-right: 9px;
+    width: 38px;
+    height: 38px;
+    border-radius: 38px;
+    background: #335B6B;
+    transition: .1s linear;
+}
+
+.button_accent:after {
+    background: var(--main);
+}
+
+.button:hover::after {
+    background: var(--accent);
+}
+
+@media screen and (max-width: 1680px) {
+    .feedback__bg_left {
+        transform: translateX(-180px);
+    }
+
+    .feedback__bg_right {
+        transform: translateX(170px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .feedback__bg_left {
+        transform: translateX(-240px);
+    }
+
+    .feedback__bg_right {
+        transform: translateX(230px);
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .advantages__bg {
+        background-size: contain;
+    }
+
+    .ad {
+        padding: 100px 0;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .offer__title {
+        font-size: 30px;
+        max-width: 195px;
+    }
+
+    .offer {
+        width: 500px;
+        height: 284px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .intro__bg {
+        opacity: .25;
+    }
+
+    .about__bg {
+        opacity: .1;
+    }
+}
+
+@media screen and (max-width: 1152px) {
+    .feedback__bg {
+        opacity: .2;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .summary {
+        max-width: calc(150px * 4 + 30px * 3);
+    }
+
+    .summary__item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .summary__count {
+        font-size: 25px;
+    }
+
+    .summary__name {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .derivative__item {
+        height: 345px;
+        width: 274px;
+    }
+
+    .derivative__name {
+        font-size: 18px;
+        padding: 30px 40px;
+    }
+
+    .form__title {
+        font-size: 28px;
+    }
+
+    .form {
+        background-position-x: right;
+    }
+
+    .assortment {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+
+    .card__image {
+        width: 200px;
+        height: 195px;
+    }
+
+    .card__content {
+        width: 200px;
+    }
+
+    .links__link_farther {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .advantages__bg {
+        background-size: cover;
+    }
+
+    .summary {
+        max-width: calc(100px * 4 + 30px * 3);
+    }
+
+    .summary__item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .summary__count {
+        font-size: 20px;
+    }
+
+    .summary__name {
+        max-width: 75px;
+    }
+
+    .nav {
+        width: calc(100% - 159px);
+        max-width: 450px;
+    }
+
+    .links__link {
+        padding-right: 20px;
+    }
+
+    .links__link_farther {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .advantages__title {
+        font-size: 28px;
+        max-width: 210px;
+    }
+
+    .advantages__subtitle {
+        font-size: 20px;
+    }
+
+    .mini-shop__container {
+        padding: 30px 0;
+    }
+
+    .mini-shop__title {
+        font-size: 28px;
+        max-width: 180px;
+    }
+
+    .footer__logo img {
+        width: 120px;
+    }
+
+    .footer__title {
+        font-size: 20px;
+    }
+
+    .footer__about {
+        font-size: 14px;
+    }
+
+    .footer__item {
+        font-size: 14px;
+    }
+
+    .feedback__title {
+        font-size: 28px;
+    }
+
+    .shop__title {
+        font-size: 28px;
+    }
+
+    .about__container {
+        padding-right: 0;
+    }
+
+    .about__content {
+        margin-right: 30px;
+    }
+
+    .about__bg {
+        background-position: -80px;
+    }
+
+    .intro {
+        height: 400px;
+    }
+
+    .about__title {
+        font-size: 28px;
+        max-width: 350px;
+        line-height: 2.2rem;
+    }
+
+    .intro__bg {
+        height: 400px;
+    }
+
+    .about__button {
+        margin: auto auto 20px;
+    }
+
+    .ad {
+        padding: 50px 0;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+
+    .offer {
+        width: 420px;
+        height: 239px;
+    }
+
+    .offer__title {
+        font-size: 20px;
+        max-width: 135px;
+    }
+
+    .intro {
+        height: 400px;
+    }
+
+    .intro__title {
+        font-size: 28px;
+        max-width: 300px;
+    }
+
+    .intro__bg {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .form {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form__title {
+        max-width: 100%;
+    }
+
+    .form__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__media {
+        border: none;
+        order: 1;
+        margin-bottom: 26px;
+    }
+
+    .footer__contacts {
+        border-right: 1px solid #D5D5D5;
+        width: min-content;
+        padding: 0 10px;
+        order: 2;
+        text-align: center;
+    }
+
+    .footer__pages {
+        padding: 0 10px;
+        order: 3;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        padding: 0 20px;
+    }
+
+    .summary {
+        max-width: calc(100px * 2 + 30px * 1);
+    }
+
+    .summary__item {
+        margin-bottom: 10px;
+    }
+
+    .nav__logo {
+        padding-bottom: 20px;
+        margin-right: 15px;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .cart-container {
+        align-content: end;
+    }
+
+    .header__container {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        display: none;
+        visibility: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .list__item {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .list__article {
+        margin: 0;
+    }
+
+    .list__visualise {
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .feedback__container {
+        padding: 30px 10px;
+    }
+
+    .feedback__divider {
+        margin: 30px;
+    }
+
+    .shop {
+        padding: 30px 0;
+    }
+
+    .ad {
+        padding: 25px 0;
+        grid-template-columns: repeat(auto-fit, minmax(318px, 1fr));
+    }
+
+    .offer {
+        width: 318px;
+        height: 181px;
+    }
+
+    .offer__title {
+        font-size: 16px;
+        max-width: 115px;
+    }
+
+    .intro__bg {
+        overflow: hidden;
+        transform: translateX(150px);
+    }
+
+    .header {
+        padding: 30px 10px;
+    }
+
+    .advantages__content {
+        padding-left: 20px;
+    }
+
+    .map {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .feedback__bg_right {
+        visibility: hidden;
+    }
+
+    .feedback__bg_left {
+        transform: none;
+        opacity: .1;
+        width: 100%;
+    }
+
+    .header {
+        padding-bottom: 60px;
+    }
+
+    .nav__logo {
+        margin-bottom: 10px;
+    }
+
+    .header {
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__contacts {
+        padding: 0 10px 0 0;
+    }
+
+    .footer__pages {
+        padding: 0 0 0 10px;
+    }
+}

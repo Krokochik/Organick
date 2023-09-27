@@ -33,25 +33,13 @@
 }
 
 .derivative__item_organic {
-    background: url("../images/organic-bg.png") no-repeat;
+        background: url("/images/organic-bg.png") no-repeat;
 }
 
 .derivative__item_juice {
-    background: url("../images/juice-bg.png") no-repeat;
+        background: url("/images/juice-bg.png") no-repeat;
 }
 
 .derivative__item_cookies {
-    background: url("../images/cookies-bg.png") no-repeat;
-}
-
-@media screen and (max-width: 800px) {
-    .derivative__item {
-        height: 345px;
-        width: 274px;
-    }
-
-    .derivative__name {
-        font-size: 18px;
-        padding: 30px 40px;
-    }
+        background: url("/images/cookies-bg.png") no-repeat;
 }

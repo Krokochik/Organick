@@ -5,7 +5,7 @@
 }
 
 .advantages__bg {
-    background: url("../images/advantages.png") no-repeat;
+        background: url("/images/advantages.png") no-repeat;
     background-position-x: left;
     background-size: 50vw 52vw;
     max-width: 1440px;
@@ -65,27 +65,4 @@
     font-weight: 400;
     max-width: 601px;
     margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1439px) {
-    .advantages__bg {
-        background-size: contain;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .advantages__bg {
-        background-size: cover;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .advantages__title {
-        font-size: 28px;
-        max-width: 210px;
-    }
-
-    .advantages__subtitle {
-        font-size: 20px;
-    }
 }

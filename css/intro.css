@@ -1,0 +1,27 @@
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg-accent);
+    height: 913px;
+    padding: 0 30px;
+}
+
+.intro__bg {
+    right: 0;
+}
+
+.intro__container {
+    position: relative;
+}
+
+.intro__cut {
+    margin-bottom: 14px;
+}
+
+.intro__title {
+    max-width: 496px;
+    margin-bottom: 30px;
+}
