@@ -466,7 +466,7 @@
     }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
     .feedback__bg_right {
         visibility: hidden;
     }
@@ -487,6 +487,10 @@
 
     .header {
         min-height: 250px;
+    }
+
+    .feedback__list {
+        min-height: 400px;
     }
 }
 
