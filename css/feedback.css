@@ -78,7 +78,7 @@
 .feedback__text {
     font-size: 18px;
     max-width: 942px;
-    margin-bottom: 23px;
+    margin: 0 auto 23px;
 }
 
 .feedback-credentials {
