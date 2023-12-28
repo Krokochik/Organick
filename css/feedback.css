@@ -12,12 +12,12 @@
 }
 
 .feedback__bg_left {
-    background: url("/images/feedback-bg-left.png") no-repeat;
+    background: url("/Organick/images/feedback-bg-left.png") no-repeat;
     background-position-x: left;
 }
 
 .feedback__bg_right {
-    background: url("/images/feedback-bg-right.png") no-repeat;
+    background: url("/Organick/images/feedback-bg-right.png") no-repeat;
     background-position-x: right;
 }
 
