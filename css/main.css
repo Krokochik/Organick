@@ -53,7 +53,7 @@
 }
 
 .button:after {
-        content: url("/images/arrow.svg");
+        content: url("/Organick/images/arrow.svg");
     display: inline-block;
     margin-left: 27px;
     margin-right: 9px;
