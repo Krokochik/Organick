@@ -36,7 +36,7 @@
 }
 
 .offer_fruits {
-    background: url("/images/ad-fruits.png") no-repeat;
+    background: url("/Organick/images/ad-fruits.png") no-repeat;
     background-size: cover;
 
     .offer__cut, .offer__title {
@@ -45,6 +45,6 @@
 }
 
 .offer_vegs {
-    background: url("/images/ad-vegetables.png") no-repeat;
+    background: url("/Organick/images/ad-vegetables.png") no-repeat;
     background-size: cover;
 }
